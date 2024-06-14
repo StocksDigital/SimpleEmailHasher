@@ -18,7 +18,7 @@ SimpleEmailHasher is a Python script designed to read a CSV file containing emai
 
 1. Clone the repository or download the `hash_emails.py` script.
    ```bash
-   git clone https://github.com/BriCusack/SimpleEmailHasher.git
+   git clone https://github.com/StocksDigital/SimpleEmailHasher.git
    cd SimpleEmailHasher
 2. Install dependancies using `pip install -r requirements.txt`
 
