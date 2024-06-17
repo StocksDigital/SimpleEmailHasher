@@ -12,14 +12,15 @@ def sha256_hash(email):
 
 def find_emails(df):
     """Finds all email addresses in the DataFrame and returns a list of unique emails."""
-    email_pattern = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
+    email_pattern = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?')
     emails = set()
 
     for column in df.columns:
         if df[column].dtype == object:
-            for value in df[column].dropna():
-                found_emails = email_pattern.findall(str(value))
-                emails.update(found_emails)
+            for value in df[column]:
+                if pd.notna(value):  # Check if the value is not NaN
+                    found_emails = email_pattern.findall(str(value))
+                    emails.update(found_emails)
     return list(emails)
 
 
