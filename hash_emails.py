@@ -12,7 +12,7 @@ def sha256_hash(email):
 
 def find_emails(df):
     """Finds all email addresses in the DataFrame and returns a list of unique emails."""
-    email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')
+    email_pattern = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
     emails = set()
 
     for column in df.columns:

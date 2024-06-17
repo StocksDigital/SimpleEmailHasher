@@ -1,11 +1,10 @@
-name,email
 Alice Johnson,alice.johnson@example.com
 Bob Smith,bob.smith@example.com
 Carol Williams,carol.williams@example.com
-David Brown,david.brown@example.com
+David Brown,david.brown@example.com.au
 Eve Davis,evedavis@example.com
 Frank Miller,frank.miller@example.com
-Grace Wilson,grace.wilson78@example.com
+Grace Wilson,grace.wilson78@example.net
 Henry Moore,henry.moore@example.com
 Ivy Taylor,ivy.taylor@example.com
 Jack Anderson,jack.anderson@example.com
@@ -19,3 +18,5 @@ Quincy Martinez,quincy.martinez@example.com
 Rachel Robinson,rachelrobinson@example.com
 Steve Clark,steve.clark@example.com
 Trudy Rodriguez,trudy.rodriguez@example.com
+Brian Cusack, brian@stocksdigital.com
+Brian Cusack, brian@stocksdigital.com.au
